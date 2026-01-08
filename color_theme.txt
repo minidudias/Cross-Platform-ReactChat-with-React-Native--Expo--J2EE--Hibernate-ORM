@@ -1,0 +1,5 @@
+#59ce72 - light green
+#0f9d58 - dark green
+#273443 - background
+#767c8c - secondary button
+#d4d6d8 - fonts

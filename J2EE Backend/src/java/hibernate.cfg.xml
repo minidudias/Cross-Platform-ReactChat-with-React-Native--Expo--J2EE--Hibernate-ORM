@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>    <!-- hibernate.cfg.xml should also be created inside the "default package" -->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">    <!-- necessary/not optional -->
+<hibernate-configuration>
+<session-factory>
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/chat?useSSL=false</property>
+        <property name="hibernate.connection.username">root</property>    <!-- generally "root" -->
+        <property name="hibernate.connection.password">20030130md</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <!-- map java beans below this using, <mapping class=""/> tags -->
+        <mapping class="entity.User_Status"/>
+        <mapping class="entity.Chat_Status"/>
+        <mapping class="entity.User"/>
+        <mapping class="entity.Chat"/>
+</session-factory>
+</hibernate-configuration>
